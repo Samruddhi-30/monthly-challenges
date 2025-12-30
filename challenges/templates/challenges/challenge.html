@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block css_style %}
+<link rel="stylesheet" , href="{% static "/challenges/challenge.css"%}"/> 
+{% endblock css_style %}
+
+
+{% block content %}
+     
+    {% include "challenges/header.html" %}
+
+    <h1>Welcome to the Challenges</h1>
+    <h1>{{ month_n|title }} Month's Challenge</h1>
+    <h2>{{ challenge_val }}</h2>
+
+{% endblock %}
+    

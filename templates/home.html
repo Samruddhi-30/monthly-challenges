@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_style%} <link rel="stylesheet" , href="{% static "home.css"%}"/> {% endblock%}
+{% block content %}
+<h1>Welcome to Challenges!</h1>
+<a href='/challenges/'>View all challenges.</a>
+{% endblock content %}
